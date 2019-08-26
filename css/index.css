@@ -140,6 +140,11 @@ body {
 }
 a {
   font-size: 1.6rem;
+  color: #FFF;
+  text-decoration: none;
+}
+a:hover {
+  color: #3DE39C;
 }
 h1,
 h2,
@@ -222,6 +227,9 @@ footer p {
   align-items: center;
   width: 80%;
   margin: 50px 0 30px 10%;
+}
+.blog-container a {
+  font-size: 3rem;
 }
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
