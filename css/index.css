@@ -194,19 +194,38 @@ ul a {
   font-size: 1.8rem;
   line-height: 2.7rem;
 }
-.jumbo {
-  width: 356px;
-  height: 184px;
-  left: 105px;
-  top: 273px;
+.jumbotron {
+  display: flex;
+  flex-direction: column;
+}
+.jumbotron .jumbo-img-wrap {
+  display: flex;
+  width: 100%;
+}
+.jumbotron .jumbo-img-wrap .jumbo-text {
+  width: 35.6rem;
+  height: 18.4rem;
+  margin-left: 36.5rem;
+  margin-top: 27rem;
   font-family: Poppins;
   font-style: normal;
   font-weight: bold;
-  font-size: 35px;
-  line-height: 52px;
-  text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.56);
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+  text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
   color: rgba(255, 255, 255);
 }
-.jumbo span {
+.jumbotron .jumbo-img-wrap .jumbo-text span {
   color: #3DE39C;
+}
+.jumbotron .jumbo-img-wrap .jumbo-img {
+  width: 357px;
+  height: 667px;
+  margin-left: -8rem;
+  margin-top: 8rem;
+}
+.jumbotron .jumbo-img-wrap .jumbo-cta {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
 }
