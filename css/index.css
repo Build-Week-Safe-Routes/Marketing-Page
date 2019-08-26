@@ -224,8 +224,20 @@ ul a {
   margin-left: -8rem;
   margin-top: 8rem;
 }
-.jumbotron .jumbo-img-wrap .jumbo-cta {
+.jumbotron .jumbo-cta {
   display: flex;
   flex-direction: column;
-  width: 15%;
+  width: 100%;
+}
+.jumbotron .jumbo-cta .jumbo-blurb > p {
+  width: 64rem;
+  height: 2rem;
+  margin-left: 28%;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 30px;
+  text-align: center;
+  color: #929EAD;
 }
