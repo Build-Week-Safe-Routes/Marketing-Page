@@ -145,7 +145,7 @@ h5 {
   font-family: 'Poppins', sans-serif;
 }
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 30rem;
 }
 h2 {
@@ -219,8 +219,8 @@ ul a {
   color: #3DE39C;
 }
 .jumbotron .jumbo-img-wrap .jumbo-img {
-  width: 357px;
-  height: 667px;
+  width: 35.7rem;
+  height: 66.7rem;
   margin-left: -8rem;
   margin-top: 8rem;
 }
@@ -232,7 +232,7 @@ ul a {
 .jumbotron .jumbo-cta .jumbo-blurb > p {
   width: 64rem;
   height: 2rem;
-  margin-left: 28%;
+  margin-left: 30%;
   margin-top: 1rem;
   font-style: normal;
   font-weight: 600;
@@ -240,4 +240,15 @@ ul a {
   line-height: 30px;
   text-align: center;
   color: #929EAD;
+}
+.jumbotron .jumbo-cta .jumbo-button button {
+  width: 14.9rem;
+  height: 4.8rem;
+  margin-left: 45%;
+  box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.78);
+  margin-top: 10rem;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  background: #3DE39C;
+  border-radius: 9px;
+  font-size: 1.6rem;
 }
