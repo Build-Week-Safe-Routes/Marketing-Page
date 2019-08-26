@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #222324;
 }
 h1,
 h2,
@@ -165,6 +166,7 @@ p {
 .navigation {
   display: flex;
   justify-content: space-around;
+  color: #eceaea;
 }
 .nav-left-side {
   display: flex;
