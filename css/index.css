@@ -126,3 +126,46 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+}
+h1 {
+  font-size: 4rem;
+}
+h2 {
+  font-size: 2.8rem;
+  color: #23283a;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  padding-bottom: 10px;
+  color: #212529;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+nav.navigation {
+  display: flex;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
