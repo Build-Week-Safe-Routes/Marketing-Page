@@ -144,42 +144,51 @@ h5 {
   font-family: 'Poppins', sans-serif;
 }
 h1 {
-  font-size: 4rem;
-  font-weight: 300px;
+  font-size: 3rem;
+  font-weight: 30rem;
 }
 h2 {
   font-size: 2.8rem;
-  color: #23283a;
 }
 p {
   font-size: 1.6rem;
   line-height: 1.5;
   padding-bottom: 10px;
-  color: #212529;
-}
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
-}
-header > nav.navigation {
-  display: flex;
-}
-.nav-left-side {
-  display: flex;
-  justify-content: flex-start;
-  margin-top: 50px;
-  margin-left: 20px;
-}
-img.logo {
-  position: absolute;
-  width: 3.9rem;
-  height: 3.8rem;
-  left: 2.2rem;
-  top: 4.4rem;
 }
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.nav-left-side {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 5rem;
+}
+img.logo {
+  width: 3.9rem;
+  height: 3.8rem;
+  left: 2.2rem;
+  top: 4.2rem;
+  margin-top: -0.5rem;
+  margin-right: 1rem;
+}
+.nav-right-side ul {
+  display: flex;
+  justify-content: flex-end;
+  justify-items: space-between;
+  margin-top: 5rem;
+  width: 100%;
+}
+ul a {
+  white-space: nowrap;
+  padding-right: 4rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }

@@ -1,19 +1,37 @@
-header > nav.navigation {
+.navigation {
     display: flex;
+    justify-content: space-around;
 }
 
 
 .nav-left-side {
     display: flex;
     justify-content: flex-start;
-    margin-top: 50px;
-    margin-left: 20px 
+    margin-top: 5rem;
 }
 
 img.logo {
-    position: absolute;
     width: 3.9rem;
     height: 3.8rem;
     left: 2.2rem;
-    top: 4.4rem;
+    top: 4.2rem;
+    margin-top: -0.5rem;
+    margin-right: 1rem; 
 }
+
+.nav-right-side ul {
+    display: flex;
+    justify-content: flex-end;
+    justify-items: space-between;
+    margin-top: 5rem;
+    width: 100%;
+}
+
+ul a {
+    white-space: nowrap;
+    padding-right: 4rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+}
+
+
