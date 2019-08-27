@@ -194,6 +194,8 @@ ul a {
   padding-right: 4rem;
   font-size: 1.8rem;
   line-height: 2.7rem;
+  color: #eceaea;
+  text-decoration: none;
 }
 .jumbotron {
   display: flex;
@@ -219,16 +221,45 @@ ul a {
 .jumbotron .jumbo-img-wrap .jumbo-text span {
   color: #3DE39C;
 }
+@media (max-width:500px) {
+  .jumbotron .jumbo-img-wrap .jumbo-text {
+    order: 2;
+    margin-top: 0;
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+  }
+}
 .jumbotron .jumbo-img-wrap .jumbo-img {
   width: 35.7rem;
   height: 66.7rem;
   margin-left: -8rem;
   margin-top: 8rem;
 }
+@media (max-width:500px) {
+  .jumbotron .jumbo-img-wrap .jumbo-img {
+    order: 1;
+    margin-left: 12%;
+  }
+}
+@media (max-width:500px) {
+  .jumbotron .jumbo-img-wrap {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .jumbotron .jumbo-cta {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+@media (max-width:500px) {
+  .jumbotron .jumbo-cta {
+    margin-top: 0;
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+  }
 }
 .jumbotron .jumbo-cta .jumbo-blurb > p {
   width: 64rem;
@@ -242,6 +273,15 @@ ul a {
   text-align: center;
   color: #929EAD;
 }
+@media (max-width:500px) {
+  .jumbotron .jumbo-cta .jumbo-blurb > p {
+    order: 2;
+    margin-top: 0;
+    margin-left: 0%;
+    text-align: center;
+    width: 100%;
+  }
+}
 .jumbotron .jumbo-cta .jumbo-button button {
   width: 14.9rem;
   height: 4.8rem;
@@ -253,11 +293,25 @@ ul a {
   font-weight: 500;
   font-size: 1.6rem;
 }
+@media (max-width:500px) {
+  .jumbotron .jumbo-cta .jumbo-button button {
+    margin-top: 25%;
+    margin-left: 0%;
+    text-align: center;
+  }
+}
 .features {
   display: flex;
   flex-direction: column;
   margin-left: 36.5rem;
   margin-top: 6rem;
+}
+@media (max-width:500px) {
+  .features {
+    margin-top: 5%;
+    margin-left: 0%;
+    text-align: center;
+  }
 }
 .features .features-heading {
   font-weight: bold;
@@ -273,6 +327,15 @@ ul a {
 .features .features-wrapper .hot-spots {
   display: flex;
   margin-top: 2%;
+}
+@media (max-width:500px) {
+  .features .features-wrapper .hot-spots {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-left: 0%;
+    text-align: center;
+  }
 }
 .features .features-wrapper .hot-spots .feature-text {
   display: flex;
