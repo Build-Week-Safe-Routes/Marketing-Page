@@ -182,8 +182,17 @@ p {
     padding: 5% 11%;
   }
 }
-.nav-left-side {
+.navigation .nav-left-side {
   display: flex;
+  white-space: nowrap;
+}
+@media screen and (min-width:370px) and (max-width:500px) {
+  .navigation .nav-left-side {
+    display: flex;
+    justify-content: center;
+    padding: 5% 11%;
+    margin-left: 10rem;
+  }
 }
 img.logo {
   width: 3.9rem;
@@ -216,8 +225,7 @@ ul a {
 }
 @media screen and (min-width:370px) and (max-width:500px) {
   ul a {
-    font-size: 1.6rem;
-    padding: 1.5em;
+    padding: 1.4em;
     white-space: nowrap;
   }
 }
