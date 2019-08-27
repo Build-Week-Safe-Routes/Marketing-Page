@@ -136,7 +136,7 @@ html,
 body {
   font-family: 'Poppins', sans-serif;
   background-size: cover;
-  background: linear-gradient(to bottom, #1c1a1f 0%, #000000 4000px);
+  background: linear-gradient(to bottom, rgba(28, 26, 31, 0.98) 0%, rgba(0, 0, 0, 0.98) 4000px), url(../assets/images/background.jpg);
   overflow-x: hidden;
 }
 h1,
@@ -240,6 +240,13 @@ ul a {
   justify-content: center;
   margin-right: 20%;
 }
+@media screen and (min-width:370px) and (max-width:500px) {
+  .jumbotron .jumbo-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .jumbotron .jumbo-wrap .jumbo-text-wrap .jumbo-text {
   width: 35.6rem;
   height: 18.4rem;
@@ -251,7 +258,7 @@ ul a {
   font-size: 4rem;
   line-height: 5.2rem;
   text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
-  color: rgba(255, 255, 255);
+  color: rgba(255, 255, 255, 0.8);
 }
 .jumbotron .jumbo-wrap .jumbo-text-wrap .jumbo-text span {
   color: #3DE39C;
@@ -265,18 +272,21 @@ ul a {
     width: 100%;
   }
 }
+@media screen and (min-width:370px) and (max-width:500px) {
+  .jumbotron .jumbo-wrap .jumbo-img-wrap {
+    order: 1;
+    margin-top: 0;
+    margin-left: 22%;
+    text-align: center;
+    width: 100%;
+  }
+}
 .jumbotron .jumbo-wrap .jumbo-img-wrap .jumbo-img {
   margin-left: -12%;
   width: 35.7rem;
   height: 66.7rem;
   margin-top: 8rem;
   filter: drop-shadow(0px 5px 3px black);
-}
-@media screen and (min-width:370px) and (max-width:500px) {
-  .jumbotron .jumbo-wrap {
-    display: flex;
-    flex-direction: column;
-  }
 }
 .jumbotron .jumbo-cta {
   display: flex;
@@ -289,7 +299,7 @@ ul a {
 @media screen and (min-width:370px) and (max-width:500px) {
   .jumbotron .jumbo-cta {
     margin-top: 0;
-    margin-left: 0%;
+    margin-left: 5%;
     text-align: center;
     width: 90%;
   }
@@ -360,6 +370,13 @@ ul a {
   display: flex;
   justify-content: center;
 }
+@media screen and (min-width:370px) and (max-width:500px) {
+  .features .features-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
 .features .features-wrapper .feature {
   display: flex;
   flex-direction: column;
@@ -371,7 +388,7 @@ ul a {
     display: flex;
     flex-direction: column;
     margin-top: 5%;
-    margin-left: 0%;
+    margin-left: 5%;
     width: 100%;
   }
 }
