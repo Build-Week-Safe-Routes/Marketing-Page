@@ -65,7 +65,7 @@
             font-style: normal;
             font-weight: 600;
             font-size: 2rem;
-            line-height: 30px;
+            line-height: 3rem;
             text-align: center;
             color: #929EAD;
 
@@ -102,19 +102,29 @@
 .features {
     display: flex;
     flex-direction: column;
-    margin-left: 36.5rem;
+    width: 100%;
+    margin-left: 25%;
+    margin-right: 25%;
     margin-top: 6rem;
     @media @phone {
         margin-top: 5%;
         margin-left: 0%;
         text-align: center;
+        width: 100%;
             
+        }
+    @media @tablet {
+        margin-top: 0%;
+        margin-left: 0%;
+        text-align: center;
+        width: 100%;
+        
         }
 
     .features-heading {
         font-weight: bold;
-        font-size: 48px;
-        line-height: 72px;
+        font-size: 4.8rem;
+        line-height: 7.2rem;
         color: #837F92;
         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
     }
@@ -122,6 +132,9 @@
     .features-wrapper {
         display: flex;
         flex-direction: column;
+        width: 100%;
+        margin-right: 45rem; 
+        flex:1;
             
             .hot-spots {
                 display: flex;
@@ -131,14 +144,32 @@
                     flex-direction: column;
                     margin-top: 5%;
                     margin-left: 0%;
+                    width: 100%;                        
+                    }
+                @media @tablet {
+                    .flex-wrap();
+                    margin-top: 0%;
+                    margin-left: 0%;
                     text-align: center;
-                        
+                    width: 100%;
                     }
 
                 .feature-text {
                     display: flex;
                     flex-direction: column;
-                    width: 33%;
+                    width: 40%;
+                    @media @phone {
+                        margin-left: 2%;
+                        text-align: left;
+                        width: 95%;
+                        }
+
+                    @media @tablet {
+                        margin-top: 0%;
+                        margin-left: 0%;
+                        text-align: center;
+                        width: 100%;
+                        }
                     
                     h2 {
                         color: #F2F2F2
@@ -148,16 +179,26 @@
                         color: #929EAD;;
                         margin-top: 1rem; 
                         margin-right: 1rem; 
+                        flex-shrink: 0;
+                        @media @tablet {
+                            margin-top: 0%;
+                            margin-left: 0%;
+                            text-align: center;
+                            width: 100%;
+                            }
                     }
-                } 
+                }
+                
+                .feature-img {
+                    width: 40%;
 
-                #hotspots-img {
-                    display: flex;
-                    width: 467px;
-                    height: 273px;
-                    margin-top: 0%; 
-                    box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
-                    border-radius: 3px;
+                    #hotspots-img {
+                        width: 46.7rem;
+                        height: 27.3rem;
+                        margin-top: 0%; 
+                        box-shadow: 0rem 0.4rem 0.4rem rgba(104, 102, 108, 0.45);
+                        border-radius: 0.3rem;
+                    }
                 }
                 
             }
@@ -165,12 +206,25 @@
             .predict-event {
                 display: flex;
                 margin-top: 3%; 
+                width: 100%;
+                @media @phone {
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-top: 5%;
+                    margin-left: 0%;
+                    width: 100%;                        
+                    }
 
                 .feature-text {
                     display: flex;
                     flex-direction: column;
                     width: 33%;
                     margin-left: 2rem;
+                    @media @phone {
+                        margin-left: 2%;
+                        text-align: left;
+                        width: 100%;
+                        }
                     
                     h2 {
                         color: #F2F2F2
@@ -184,8 +238,8 @@
 
                 #predict-img {
                     display: flex;
-                    width: 430px;
-                    height: 273px;
+                    width: 43rem;
+                    height: 27.3rem;
                     margin-top: 0%; 
                     box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
                     border-radius: 3px;
