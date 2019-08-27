@@ -287,15 +287,36 @@ ul a {
   margin-top: 1rem;
   margin-right: 1rem;
 }
-.features .features-wrapper .hot-spots .feature-img {
+.features .features-wrapper .hot-spots #hotspots-img {
   display: flex;
   width: 467px;
   height: 273px;
   margin-top: 0%;
-  left: 511px;
   box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
   border-radius: 3px;
 }
-.features .features-wrapper .predict-events {
+.features .features-wrapper .predict-event {
   display: flex;
+  margin-top: 3%;
+}
+.features .features-wrapper .predict-event .feature-text {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+  margin-left: 2rem;
+}
+.features .features-wrapper .predict-event .feature-text h2 {
+  color: #F2F2F2;
+}
+.features .features-wrapper .predict-event .feature-text p {
+  color: #929EAD;
+  margin-top: 1rem;
+}
+.features .features-wrapper .predict-event #predict-img {
+  display: flex;
+  width: 430px;
+  height: 273px;
+  margin-top: 0%;
+  box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
+  border-radius: 3px;
 }
