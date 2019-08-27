@@ -27,6 +27,7 @@
                 line-height: 5.2rem;
                 text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
                 color: rgba(255, 255, 255, 0.8);
+        
 
                 span {
                     color: #3DE39C
@@ -57,7 +58,7 @@
                 height: 66.7rem;
                 //margin-left: -20rem;
                 margin-top: 8rem;
-                filter: drop-shadow(0px 5px 3px black);
+                filter: drop-shadow(0px 3px 9px black);
             }
         }
 
@@ -214,53 +215,7 @@
 
         }
 
-        // .predict-event {
-        //     display: flex;
-        //     margin-top: 3%;
-        //     width: 100%;
-
-        //     @media @phone {
-        //         display: flex;
-        //         flex-direction: column-reverse;
-        //         margin-top: 5%;
-        //         margin-left: 0%;
-        //         width: 100%;
-        //     }
-
-        //     .feature-text {
-        //         display: flex;
-        //         flex-direction: column;
-        //         width: 33%;
-        //         margin-left: 2rem;
-
-        //         @media @phone {
-        //             margin-left: 2%;
-        //             text-align: left;
-        //             width: 100%;
-        //         }
-
-        //         h2 {
-        //             color: #F2F2F2
-        //         }
-
-        //         p {
-        //             color: #929EAD;
-        //             ;
-        //             margin-top: 1rem;
-        //         }
-        //     }
-
-        //     #predict-img {
-        //         display: flex;
-        //         width: 43rem;
-        //         height: 27.3rem;
-        //         margin-top: 0%;
-        //         box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
-        //         border-radius: 3px;
-        //     }
-
-
-        // }
+        
     }
 
 }
@@ -272,8 +227,7 @@
     }
 }
 
-
-//media queries
+//media queries for tablet
 
 @media screen and (max-width:800px) {
 
@@ -291,19 +245,26 @@
         
     }
 
-    // .jumbotron .jumbo-button {
-    //     margin-left: 9%;
-    // }
-
-    // .features .features-heading {
-    //     margin-left: -4%;
-    //     margin-top: 4%; 
-    // }
-
     .features .hot-spots {
         //display: flex;
         display: none;
     }
-
-
 }
+
+//footer 
+footer {
+    display: flex;
+    color:  #F2F2F2;
+    margin-left: 38%;
+    font-size: 2rem;
+    margin-top: 8rem;
+
+    @media @phone {
+        width: 80%;
+        margin-left: 10rem;
+        //white-space: nowrap;
+        text-align: center;
+    }
+}
+
+
