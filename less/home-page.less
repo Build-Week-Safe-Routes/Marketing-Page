@@ -1,0 +1,291 @@
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+
+    .jumbo-wrap {
+        display: flex;
+        margin-left: 23%;
+        margin-right: 25%;
+        .jumbo-text-wrap {
+            //margin-left: 25%;
+            //border: solid 3px #3DE39C;
+            .jumbo-text {
+                width: 35.6rem;
+                height: 18.4rem;
+                margin-left: 8%;
+                //margin-left: 36.5rem;
+                margin-top: 27rem;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 4rem;
+                line-height: 5.2rem;
+                text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
+                color: rgba(255, 255, 255);
+
+                span {
+                    color: #3DE39C
+                }
+
+                ;
+
+                @media @phone {
+                    order: 2;
+                    margin-top: 0;
+                    margin-left: 0%;
+                    text-align: center;
+                    width: 100%;
+                }
+            }
+        }
+
+        .jumbo-img-wrap {
+
+            //border: solid 3px #3DE39C;
+            //margin-right: 25%;
+            .jumbo-img {
+                margin-left: -12%;
+                width: 35.7rem;
+                height: 66.7rem;
+                //margin-left: -20rem;
+                margin-top: 8rem;
+                filter: drop-shadow(0px 5px 3px black);
+            }
+        }
+
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+        }
+
+    }
+
+    .jumbo-cta {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        margin-left: 33%;
+
+        //border: solid 3px #3DE39C;
+        @media @phone {
+            margin-top: 0;
+            margin-left: 0%;
+            text-align: center;
+            width: 100%;
+        }
+
+        .jumbo-blurb>p {
+            width: 64rem;
+            height: 2rem;
+            //margin-left: 50%;
+            margin-top: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 2rem;
+            line-height: 3rem;
+            text-align: center;
+            color: #929EAD;
+
+            @media @phone {
+                order: 2;
+                margin-top: 0;
+                margin-left: 0%;
+                text-align: center;
+                width: 100%;
+            }
+
+        }
+
+        .jumbo-button button {
+            width: 14.9rem;
+            height: 4.8rem;
+            margin-left: 17.5%;
+            box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.90);
+            margin-top: 10rem;
+            background: #3DE39C;
+            border-radius: 9px;
+            font-weight: 500;
+            font-size: 1.6rem;
+
+            @media @phone {
+                margin-top: 25%;
+                margin-left: 0%;
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.features {
+    //border: solid 3px rgb(61, 64, 227);
+    display: flex;
+    flex-direction: column;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 6rem;
+
+    @media @phone {
+        margin-top: 5%;
+        margin-left: 0%;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    @media @tablet {
+        margin-top: 0%;
+        margin-left: 0%;
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .features-heading {
+        font-weight: bold;
+        font-size: 4.8rem;
+        line-height: 7.2rem;
+        color: #837F92;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
+    }
+
+    .features-wrapper {
+        display: flex;
+        flex-direction: column;
+        //border: solid 3px yellow;
+        justify-content: center;
+        align-content: center;
+
+        .hot-spots {
+            display: flex;
+            margin-top: 2%;
+            width: 95%;
+            .flex-wrap();
+
+            @media @phone {
+                display: flex;
+                flex-direction: column;
+                margin-top: 5%;
+                margin-left: 0%;
+                width: 100%;
+            }
+
+            @media @tablet {
+                margin-top: 0%;
+                margin-left: 0%;
+                text-align: center;
+                width: 100%;
+            }
+
+            .feature-text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 0%;
+
+                //border: solid 3px red;
+                @media @phone {
+                    margin-left: 2%;
+                    text-align: left;
+                    width: 95%;
+                }
+
+                @media @tablet {
+                    margin-top: 0%;
+                    margin-left: 0%;
+                    text-align: center;
+                    width: 100%;
+                    flex-wrap: nowrap;
+                }
+
+                h2 {
+                    color: #F2F2F2
+                }
+
+                p {
+                    color: #929EAD;
+                    ;
+                    margin-top: 1rem;
+                    margin-right: 1rem;
+
+                    @media @tablet {
+                        margin-top: 0%;
+                        margin-left: 0%;
+                        text-align: center;
+                        width: 100%;
+                    }
+                }
+            }
+
+            .feature-img {
+                border: solid 3px white;
+                margin-top: 0%;
+
+                #hotspots-img {
+                    width: 43rem;
+                    height: 27.3rem;
+                    //border: solid 3px #3DE39C;
+                    box-shadow: 0rem 0.4rem 0.4rem rgba(104, 102, 108, 0.45);
+                    border-radius: 0.3rem;
+                }
+            }
+
+        }
+
+        .predict-event {
+            display: flex;
+            margin-top: 3%;
+            width: 100%;
+
+            @media @phone {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 5%;
+                margin-left: 0%;
+                width: 100%;
+            }
+
+            .feature-text {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+                margin-left: 2rem;
+
+                @media @phone {
+                    margin-left: 2%;
+                    text-align: left;
+                    width: 100%;
+                }
+
+                h2 {
+                    color: #F2F2F2
+                }
+
+                p {
+                    color: #929EAD;
+                    ;
+                    margin-top: 1rem;
+                }
+            }
+
+            #predict-img {
+                display: flex;
+                width: 43rem;
+                height: 27.3rem;
+                margin-top: 0%;
+                box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
+                border-radius: 3px;
+            }
+
+
+        }
+    }
+
+}
+
+@media @phone {
+    .jumbo-img-wrap.jumbo-img {
+        order: 1;
+        margin-left: 0%;
+    }
+}

@@ -1,14 +1,18 @@
+.form {
+  margin-left: 9%;
+}
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px; 
   margin-top: 6px;
   margin-bottom: 16px;
-  resize: vertical
+  resize: vertical;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -28,8 +32,13 @@ input[type=submit]:hover {
 
 /* Add a background color and some padding around the form */
 .form-container {
+  width: 70%;
   margin-left: 9%;
   border-radius: 5px;
-  background-color: @main-background-color;
-  padding: 20px;
+  background-color: gray;
+  padding: 30px;
+}
+
+.blog-container h2 {
+  color: @white;
 }
