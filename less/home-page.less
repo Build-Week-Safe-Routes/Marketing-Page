@@ -1,25 +1,35 @@
 .jumbotron {
     display: flex;
     flex-direction: column;
+    width: 95%;
 
-    .jumbo-img-wrap {
+    .jumbo-wrap {
         display: flex;
-        width: 100%;
-        .jumbo-text {
-            width: 35.6rem;
-            height: 18.4rem;
-            margin-left: 36.5rem;
-            margin-top: 27rem;
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 3.5rem;
-            line-height: 5.2rem;
-            text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
-            color: rgba(255,255,255);
+        margin-left: 23%;
+        margin-right: 25%;
+        .jumbo-text-wrap {
+            //margin-left: 25%;
+            //border: solid 3px #3DE39C;
+            .jumbo-text {
+                width: 35.6rem;
+                height: 18.4rem;
+                margin-left: 8%;
+                //margin-left: 36.5rem;
+                margin-top: 27rem;
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 4rem;
+                line-height: 5.2rem;
+                text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
+                color: rgba(255, 255, 255);
+
                 span {
-                    color:#3DE39C
-                };
+                    color: #3DE39C
+                }
+
+                ;
+
                 @media @phone {
                     order: 2;
                     margin-top: 0;
@@ -28,28 +38,36 @@
                     width: 100%;
                 }
             }
-    
-        .jumbo-img {
+        }
+
+        .jumbo-img-wrap {
+
+            //border: solid 3px #3DE39C;
+            //margin-right: 25%;
+            .jumbo-img {
+                margin-left: -12%;
                 width: 35.7rem;
                 height: 66.7rem;
-                margin-left: -8rem;
+                //margin-left: -20rem;
                 margin-top: 8rem;
-                @media @phone {
-                    order: 1;
-                    margin-left: 12%;
-                }
+                filter: drop-shadow(0px 5px 3px black);
             }
+        }
 
         @media @phone {
             display: flex;
             flex-direction: column;
         }
-        }
+
+    }
 
     .jumbo-cta {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        width: 95%;
+        margin-left: 33%;
+
+        //border: solid 3px #3DE39C;
         @media @phone {
             margin-top: 0;
             margin-left: 0%;
@@ -60,7 +78,7 @@
         .jumbo-blurb>p {
             width: 64rem;
             height: 2rem;
-            margin-left: 30%;
+            //margin-left: 50%;
             margin-top: 1rem;
             font-style: normal;
             font-weight: 600;
@@ -82,44 +100,47 @@
         .jumbo-button button {
             width: 14.9rem;
             height: 4.8rem;
-            margin-left: 45%;
+            margin-left: 17.5%;
             box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.90);
             margin-top: 10rem;
             background: #3DE39C;
             border-radius: 9px;
             font-weight: 500;
             font-size: 1.6rem;
+
             @media @phone {
                 margin-top: 25%;
                 margin-left: 0%;
-                text-align: center;    
-                }
+                text-align: center;
+            }
         }
     }
-}           
+}
 
 
 .features {
+    //border: solid 3px rgb(61, 64, 227);
     display: flex;
     flex-direction: column;
-    width: 100%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    margin-right: 15%;
     margin-top: 6rem;
+
     @media @phone {
         margin-top: 5%;
         margin-left: 0%;
         text-align: center;
         width: 100%;
-            
-        }
+
+    }
+
     @media @tablet {
         margin-top: 0%;
         margin-left: 0%;
         text-align: center;
         width: 100%;
-        
-        }
+
+    }
 
     .features-heading {
         font-weight: bold;
@@ -132,121 +153,139 @@
     .features-wrapper {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin-right: 45rem; 
-        flex:1;
-            
-            .hot-spots {
+        //border: solid 3px yellow;
+        justify-content: center;
+        align-content: center;
+
+        .hot-spots {
+            display: flex;
+            margin-top: 2%;
+            width: 95%;
+            .flex-wrap();
+
+            @media @phone {
                 display: flex;
-                margin-top: 2%; 
+                flex-direction: column;
+                margin-top: 5%;
+                margin-left: 0%;
+                width: 100%;
+            }
+
+            @media @tablet {
+                margin-top: 0%;
+                margin-left: 0%;
+                text-align: center;
+                width: 100%;
+            }
+
+            .feature-text {
+                display: flex;
+                flex-direction: column;
+                margin-left: 0%;
+
+                //border: solid 3px red;
                 @media @phone {
-                    display: flex;
-                    flex-direction: column;
-                    margin-top: 5%;
-                    margin-left: 0%;
-                    width: 100%;                        
-                    }
+                    margin-left: 2%;
+                    text-align: left;
+                    width: 95%;
+                }
+
                 @media @tablet {
-                    .flex-wrap();
                     margin-top: 0%;
                     margin-left: 0%;
                     text-align: center;
                     width: 100%;
-                    }
+                    flex-wrap: nowrap;
+                }
 
-                .feature-text {
-                    display: flex;
-                    flex-direction: column;
-                    width: 40%;
-                    @media @phone {
-                        margin-left: 2%;
-                        text-align: left;
-                        width: 95%;
-                        }
+                h2 {
+                    color: #F2F2F2
+                }
+
+                p {
+                    color: #929EAD;
+                    ;
+                    margin-top: 1rem;
+                    margin-right: 1rem;
 
                     @media @tablet {
                         margin-top: 0%;
                         margin-left: 0%;
                         text-align: center;
                         width: 100%;
-                        }
-                    
-                    h2 {
-                        color: #F2F2F2
-                    }
-
-                    p {
-                        color: #929EAD;;
-                        margin-top: 1rem; 
-                        margin-right: 1rem; 
-                        flex-shrink: 0;
-                        @media @tablet {
-                            margin-top: 0%;
-                            margin-left: 0%;
-                            text-align: center;
-                            width: 100%;
-                            }
                     }
                 }
-                
-                .feature-img {
-                    width: 40%;
-
-                    #hotspots-img {
-                        width: 46.7rem;
-                        height: 27.3rem;
-                        margin-top: 0%; 
-                        box-shadow: 0rem 0.4rem 0.4rem rgba(104, 102, 108, 0.45);
-                        border-radius: 0.3rem;
-                    }
-                }
-                
             }
 
-            .predict-event {
-                display: flex;
-                margin-top: 3%; 
-                width: 100%;
-                @media @phone {
-                    display: flex;
-                    flex-direction: column-reverse;
-                    margin-top: 5%;
-                    margin-left: 0%;
-                    width: 100%;                        
-                    }
+            .feature-img {
+                border: solid 3px white;
+                margin-top: 0%;
 
-                .feature-text {
-                    display: flex;
-                    flex-direction: column;
-                    width: 33%;
-                    margin-left: 2rem;
-                    @media @phone {
-                        margin-left: 2%;
-                        text-align: left;
-                        width: 100%;
-                        }
-                    
-                    h2 {
-                        color: #F2F2F2
-                    }
-
-                    p {
-                        color: #929EAD;;
-                        margin-top: 1rem; 
-                    }
-                } 
-
-                #predict-img {
-                    display: flex;
+                #hotspots-img {
                     width: 43rem;
                     height: 27.3rem;
-                    margin-top: 0%; 
-                    box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
-                    border-radius: 3px;
+                    //border: solid 3px #3DE39C;
+                    box-shadow: 0rem 0.4rem 0.4rem rgba(104, 102, 108, 0.45);
+                    border-radius: 0.3rem;
                 }
-
-
             }
+
         }
 
+        .predict-event {
+            display: flex;
+            margin-top: 3%;
+            width: 100%;
+
+            @media @phone {
+                display: flex;
+                flex-direction: column-reverse;
+                margin-top: 5%;
+                margin-left: 0%;
+                width: 100%;
+            }
+
+            .feature-text {
+                display: flex;
+                flex-direction: column;
+                width: 33%;
+                margin-left: 2rem;
+
+                @media @phone {
+                    margin-left: 2%;
+                    text-align: left;
+                    width: 100%;
+                }
+
+                h2 {
+                    color: #F2F2F2
+                }
+
+                p {
+                    color: #929EAD;
+                    ;
+                    margin-top: 1rem;
+                }
+            }
+
+            #predict-img {
+                display: flex;
+                width: 43rem;
+                height: 27.3rem;
+                margin-top: 0%;
+                box-shadow: 0px 4px 4px rgba(104, 102, 108, 0.45);
+                border-radius: 3px;
+            }
+
+
+        }
     }
+
+}
+
+@media @phone {
+    .jumbo-img-wrap.jumbo-img {
+        order: 1;
+        margin-left: 0%;
+    }
+}
