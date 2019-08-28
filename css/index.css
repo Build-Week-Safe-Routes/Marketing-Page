@@ -235,6 +235,10 @@ ul a {
     white-space: nowrap;
   }
 }
+button.sign-in {
+  width: 8rem;
+  background-color: #3DE39C;
+}
 ul.internal-links a:hover {
   opacity: 1;
 }
