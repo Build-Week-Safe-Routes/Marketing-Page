@@ -236,7 +236,7 @@ ul a {
   }
 }
 ul a:hover {
-  box-shadow: green;
+  color: #3DE39C;
 }
 ul a.sign-in {
   background: #3DE39C;
@@ -395,6 +395,10 @@ footer {
   border-radius: 9px;
   font-weight: 500;
   font-size: 1.6rem;
+}
+.jumbotron .jumbo-cta .jumbo-button button a {
+  text-decoration: none;
+  color: #F2F2F2;
 }
 @media screen and (max-width:500px) {
   .jumbotron .jumbo-cta .jumbo-button button {
