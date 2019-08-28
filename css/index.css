@@ -186,6 +186,9 @@ p {
   display: flex;
   white-space: nowrap;
 }
+.navigation .nav-left-side #saferoutes {
+  font-family: 'Raleway', sans-serif;
+}
 @media screen and (max-width:500px) {
   .navigation .nav-left-side {
     display: flex;
@@ -218,6 +221,7 @@ img.logo {
 }
 ul a {
   padding-right: 4rem;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.8rem;
   line-height: 2.7rem;
   color: #eceaea;
@@ -230,6 +234,10 @@ ul a {
     padding: 0.6em;
     white-space: nowrap;
   }
+}
+ul a:hover {
+  border: 1rem 1rem;
+  border-color: green;
 }
 footer {
   display: flex;
