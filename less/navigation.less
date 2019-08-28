@@ -21,6 +21,10 @@
 .navigation .nav-left-side {
   display: flex;
   white-space: nowrap;
+  
+  h1 {
+    font-family: 'Raleway', sans-serif;
+  }
 
   @media @phone {
       display: flex;
@@ -55,6 +59,7 @@ img.logo {
 
 ul a {
   padding-right: 4rem;
+  font-family: 'Raleway', sans-serif;
   font-size: 1.8rem;
   line-height: 2.7rem;
   color: rgb(236,234,234);
@@ -67,3 +72,79 @@ ul a {
       
   }
 }
+
+ul a:hover {
+    box-shadow: green;
+   
+}
+
+ul a.sign-in {
+    .buttonMaker();
+    margin-top: -0.8rem;
+}
+
+button.sign-in {
+    width: 8rem;
+    background-color: @mint-green;
+}
+
+ul.internal-links a:hover {
+    opacity: 1;
+  }
+  
+  
+  ul.internal-links a:hover::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  ul.internal-links a:hover::before {
+    width: 100%;
+  }
+
+
+// ul li a:after,
+// li a:after {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   margin: auto;
+//   width: 0%;
+//   content: '.';
+//   color: transparent;
+//   background: #aaa;
+//   height: 1px;
+// }
+// li a:hover:after {
+//   width: 100%;
+// }
+
+// nav.fill ul li a {
+//   transition: all 2s;
+// }
+
+// nav.fill ul li a:after {
+//   text-align: left;
+//   content: '.';
+//   margin: 0;
+//   opacity: 0;
+// }
+// nav.fill ul li a:hover {
+//   color: #fff;
+//   z-index: 1;
+// }
+// nav.fill ul li a:hover:after {
+//   z-index: -10;
+//   animation: fill 1s forwards;
+//   -webkit-animation: fill 1s forwards;
+//   -moz-animation: fill 1s forwards;
+//   opacity: 1;
+// }
+
+  
