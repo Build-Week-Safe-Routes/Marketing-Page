@@ -270,9 +270,17 @@ ul.internal-links a:hover::before {
 ul.internal-links a:hover::before {
   width: 100%;
 }
-footer {
+footer div {
+  font-size: 1.6rem;
+  width: 100;
   display: flex;
-  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width:500px) {
+  footer div {
+    width: 90%;
+    text-align: center;
+  }
 }
 .jumbotron {
   display: flex;
