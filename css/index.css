@@ -186,7 +186,7 @@ p {
   display: flex;
   white-space: nowrap;
 }
-.navigation .nav-left-side #saferoutes {
+.navigation .nav-left-side h1 {
   font-family: 'Raleway', sans-serif;
 }
 @media screen and (max-width:500px) {
@@ -235,9 +235,20 @@ ul a {
     white-space: nowrap;
   }
 }
-ul a:hover {
-  border: 1rem 1rem;
-  border-color: green;
+ul.internal-links a:hover {
+  opacity: 1;
+}
+ul.internal-links a:hover::before {
+  transition: 300ms;
+  height: 5px;
+  content: "";
+  position: absolute;
+  background-color: #031D44;
+  width: 0%;
+  bottom: 10px;
+}
+ul.internal-links a:hover::before {
+  width: 100%;
 }
 footer {
   display: flex;
@@ -249,10 +260,17 @@ footer {
   width: 100%;
   align-content: center;
 }
+@media screen and (max-width:500px) {
+  .jumbotron {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .jumbotron .jumbo-wrap {
   display: flex;
   justify-content: center;
-  margin-right: 20%;
+  width: 100%;
 }
 @media screen and (max-width:500px) {
   .jumbotron .jumbo-wrap {
@@ -265,15 +283,14 @@ footer {
   .jumbotron .jumbo-wrap .jumbo-text-wrap {
     order: 2;
     margin-top: -23rem;
-    margin-left: -5%;
     text-align: center;
-    width: 100%;
+    align-self: center;
+    width: 70%;
   }
 }
 .jumbotron .jumbo-wrap .jumbo-text-wrap .jumbo-text {
   width: 35.6rem;
   height: 18.4rem;
-  margin-left: 8%;
   margin-top: 27rem;
   font-family: Poppins;
   font-style: normal;
@@ -304,27 +321,30 @@ footer {
 }
 @media screen and (max-width:500px) {
   .jumbotron .jumbo-wrap .jumbo-img-wrap .jumbo-img {
-    width: 90%;
+    max-width: 100%;
   }
 }
 .jumbotron .jumbo-cta {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  margin-left: 20%;
   width: 100%;
-  align-content: center;
 }
 @media screen and (max-width:500px) {
   .jumbotron .jumbo-cta {
-    margin-top: 0;
-    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
     text-align: center;
-    max-width: 90%;
+    width: 100%;
+    justify-content: space-around;
+    justify-items: center;
   }
 }
-.jumbotron .jumbo-cta .jumbo-blurb > p {
-  width: 65%;
+.jumbotron .jumbo-cta .jumbo-blurb {
+  width: 100%;
+}
+.jumbotron .jumbo-cta .jumbo-blurb p {
+  width: 95%;
   height: 2rem;
   margin-top: 1rem;
   font-style: normal;
@@ -335,20 +355,21 @@ footer {
   color: #929EAD;
 }
 @media screen and (max-width:500px) {
-  .jumbotron .jumbo-cta .jumbo-blurb > p {
-    order: 2;
-    margin-top: 0;
-    margin-left: 4%;
+  .jumbotron .jumbo-cta .jumbo-blurb p {
+    margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 90%;
     font-size: 1.8rem;
-    max-width: 100%;
   }
 }
+.jumbotron .jumbo-cta .jumbo-button {
+  display: flex;
+  width: 100%;
+}
 .jumbotron .jumbo-cta .jumbo-button button {
-  width: 14.9rem;
-  height: 4.8rem;
-  margin-left: 25%;
+  margin-left: 38%;
+  width: 25rem;
+  height: 5rem;
   box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.9);
   margin-top: 10rem;
   background: #3DE39C;
@@ -358,16 +379,15 @@ footer {
 }
 @media screen and (max-width:500px) {
   .jumbotron .jumbo-cta .jumbo-button button {
-    margin-top: 58%;
-    margin-left: 6%;
+    margin: 0 auto;
+    margin-top: 5%;
     text-align: center;
   }
 }
 .features {
   display: flex;
   flex-direction: column;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 100%;
   margin-top: 6rem;
 }
 @media screen and (max-width:500px) {
@@ -382,10 +402,9 @@ footer {
   font-weight: bold;
   font-size: 4.8rem;
   line-height: 7.2rem;
-  color: #837F92;
+  color: #F2F2F2;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.45);
   text-align: center;
-  margin-left: 8%;
 }
 .features .features-wrapper {
   display: flex;

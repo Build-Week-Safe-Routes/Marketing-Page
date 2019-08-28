@@ -22,7 +22,7 @@
   display: flex;
   white-space: nowrap;
   
-  #saferoutes {
+  h1 {
     font-family: 'Raleway', sans-serif;
   }
 
@@ -73,9 +73,63 @@ ul a {
   }
 }
 
-ul a:hover {
-    border: 1rem 1rem;
-    border-color: green 
-}
+ul.internal-links a:hover {
+    opacity: 1;
+  }
+  
+  
+  ul.internal-links a:hover::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+    width: 0%;
+    bottom: 10px;
+  }
+  
+  ul.internal-links a:hover::before {
+    width: 100%;
+  }
+
+
+// ul li a:after,
+// li a:after {
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   right: 0;
+//   margin: auto;
+//   width: 0%;
+//   content: '.';
+//   color: transparent;
+//   background: #aaa;
+//   height: 1px;
+// }
+// li a:hover:after {
+//   width: 100%;
+// }
+
+// nav.fill ul li a {
+//   transition: all 2s;
+// }
+
+// nav.fill ul li a:after {
+//   text-align: left;
+//   content: '.';
+//   margin: 0;
+//   opacity: 0;
+// }
+// nav.fill ul li a:hover {
+//   color: #fff;
+//   z-index: 1;
+// }
+// nav.fill ul li a:hover:after {
+//   z-index: -10;
+//   animation: fill 1s forwards;
+//   -webkit-animation: fill 1s forwards;
+//   -moz-animation: fill 1s forwards;
+//   opacity: 1;
+// }
 
   
