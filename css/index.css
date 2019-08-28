@@ -154,7 +154,6 @@ h2 {
   font-size: 2.8rem;
 }
 p {
-  color: #929EAD;
   font-size: 1.6rem;
   line-height: 1.5;
   padding-bottom: 10px;
@@ -224,23 +223,17 @@ ul a {
   color: #eceaea;
   text-decoration: none;
 }
-/* @media screen and (max-width:500px) {
+@media screen and (max-width:500px) {
   ul a {
     max-width: 100%;
     font-size: 1.6rem;
     padding: 0.6em;
     white-space: nowrap;
-  } */
-footer {
-  width: 100%;
-  height: 100px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
+  }
 }
-footer p {
-  color: #F2F2F2;
-  margin-bottom: 10px;
+footer {
+  display: flex;
+  align-items: center;
 }
 .jumbotron {
   display: flex;
