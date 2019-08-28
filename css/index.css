@@ -492,17 +492,54 @@ footer {
   color: #F2F2F2;
   font-size: 3rem;
   text-decoration: none;
+  margin-bottom: 20px;
 }
 .blog-container .crossroads {
   width: 70%;
 }
-.blog-container p {
-  color: #F2F2F2;
+.blog-container img {
   margin-top: 10px;
+  margin-bottom: 10px;
+}
+.blog-container p {
+  text-align: center;
+  color: #F2F2F2;
+  margin-top: 10px auto;
   width: 70%;
+  position: relative;
+}
+.blog-container p :before {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: #F2F2F2;
+  position: absolute;
+  left: 0;
+  top: 30%;
+}
+.blog-container p :after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 2px;
+  background: #F2F2F2;
+  position: absolute;
+  right: 0;
+  top: 30%;
 }
 .blog-container .busy-road {
   width: 70%;
+}
+.blog-container .button {
+  font-size: 2rem;
+  text-align: center;
+  background-color: #3DE39C;
+  width: 70%;
+  height: 40px;
+  padding-top: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
 }
 .contact-container {
   display: flex;
