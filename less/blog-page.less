@@ -11,6 +11,10 @@
     text-decoration: none;
     margin-bottom: 20px;
   }
+  
+  a:hover {
+    color: @mint-green;
+  }
 
   .crossroads {
     width: 70%;
@@ -64,5 +68,46 @@
     border: 1px solid white;
     border-radius: 5px;
     cursor: pointer;
+  }
+}
+
+.more-posts {
+  display: flex;
+  flex-direction: column;
+  color: @white;
+  margin-top: 100px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .more-posts-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 5%;
+
+
+    img {
+      width: 300px;
+      padding: 10px;
+    }
+
+    p {
+      width: 90%;
+      margin-left: 3%;
+    }
+
+    a {
+      color: @white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      margin-left: 2%;
+    }
+    a:hover {
+      color: @mint-green;
+    }
   }
 }
