@@ -554,13 +554,6 @@ footer {
 .blog-container a:hover {
   color: #3DE39C;
 }
-.blog-container .crossroads {
-  width: 70%;
-}
-.blog-container img {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 .blog-container p {
   text-align: center;
   color: #F2F2F2;
@@ -587,6 +580,13 @@ footer {
   position: absolute;
   right: 0;
   top: 30%;
+}
+.blog-container img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.blog-container .crossroads {
+  width: 70%;
 }
 .blog-container .busy-road {
   width: 70%;
