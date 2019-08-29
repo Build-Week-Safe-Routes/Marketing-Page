@@ -744,10 +744,20 @@ footer {
   margin-bottom: 10px;
   border-radius: 30px;
 }
+@media screen and (max-width: 500px) {
+  .contact-container img {
+    width: 90%;
+  }
+}
 .contact-container p {
   color: #F2F2F2;
   width: 60%;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 500px) {
+  .contact-container p {
+    width: 90%;
+  }
 }
 .form {
   color: #F2F2F2;
@@ -776,6 +786,11 @@ input[type=submit] {
   border-radius: 4px;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  input[type=submit] {
+    width: 100%;
+  }
+}
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
   background-color: #3DE39C;
@@ -787,4 +802,24 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #222324;
   padding: 30px;
+}
+@media screen and (max-width: 780px) {
+  .form-container {
+    width: 90%;
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .form-container {
+    width: 95%;
+    padding: 15px;
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .form-container {
+    width: 100%;
+    padding: 5px;
+    margin-left: -20px;
+  }
 }
