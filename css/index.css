@@ -661,12 +661,6 @@ footer {
   color: #F2F2F2;
   margin-top: 100px;
 }
-@media screen and (max-width: 1024px) {
-  .more-posts {
-    margin-top: 75px;
-    text-align: center;
-  }
-}
 .more-posts h2 {
   text-align: center;
   margin-bottom: 10px;
@@ -678,10 +672,11 @@ footer {
   width: 70%;
   margin-left: 5%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 500px) {
   .more-posts .more-posts-wrap {
     flex-direction: column;
-    margin: 0 auto;
+    text-align: center;
+    margin-left: 7.5rem;
   }
 }
 .more-posts .more-posts-wrap img {
