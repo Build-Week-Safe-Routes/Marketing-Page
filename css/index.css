@@ -545,11 +545,28 @@ footer {
   width: 80%;
   margin: 100px 0 0 10%;
 }
+@media screen and (max-width: 768px) {
+  .blog-container {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0px;
+  }
+}
 .blog-container a {
   color: #F2F2F2;
   font-size: 3rem;
   text-decoration: none;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .blog-container a {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog-container a {
+    font-size: 2rem;
+  }
 }
 .blog-container a:hover {
   color: #3DE39C;
@@ -571,6 +588,21 @@ footer {
   left: 0;
   top: 30%;
 }
+@media screen and (max-width: 1024px) {
+  .blog-container p :before {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-container p :before {
+    width: 125px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog-container p :before {
+    width: 100px;
+  }
+}
 .blog-container p :after {
   content: "";
   display: block;
@@ -580,6 +612,21 @@ footer {
   position: absolute;
   right: 0;
   top: 30%;
+}
+@media screen and (max-width: 1024px) {
+  .blog-container p :after {
+    width: 150px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .blog-container p :after {
+    width: 125px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog-container p :after {
+    width: 100px;
+  }
 }
 .blog-container img {
   margin-top: 10px;
@@ -594,19 +641,28 @@ footer {
 .blog-container .button {
   font-size: 2rem;
   text-align: center;
-  background-color: #3DE39C;
+  background-color: #F2F2F2;
   width: 70%;
   height: 40px;
   padding-top: 10px;
-  border: 1px solid white;
+  border: 1px solid #3DE39C;
   border-radius: 5px;
   cursor: pointer;
+}
+.blog-container .button:hover {
+  background-color: #3DE39C;
+  color: #F2F2F2;
 }
 .more-posts {
   display: flex;
   flex-direction: column;
   color: #F2F2F2;
   margin-top: 100px;
+}
+@media screen and (max-width: 1024px) {
+  .more-posts {
+    text-align: center;
+  }
 }
 .more-posts h2 {
   text-align: center;
@@ -618,6 +674,12 @@ footer {
   justify-content: space-between;
   width: 70%;
   margin-left: 5%;
+}
+@media screen and (max-width: 1024px) {
+  .more-posts .more-posts-wrap {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 }
 .more-posts .more-posts-wrap img {
   width: 300px;
@@ -635,6 +697,16 @@ footer {
 }
 .more-posts .more-posts-wrap a:hover {
   color: #3DE39C;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-left: 0px;
+}
+@media screen and (max-width: 500px) {
+  footer {
+    margin: 30px auto 0px auto;
+  }
 }
 .contact-container {
   display: flex;

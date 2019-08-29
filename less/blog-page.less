@@ -1,15 +1,27 @@
+
 .blog-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
   margin: 100px 0 0 10%;
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    width: 100%;
+    margin-left: 0px;
+  }
 
   a {
     color: @white;
     font-size: 3rem;
     text-decoration: none;
     margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+    }
   }
 
   a:hover {
@@ -32,6 +44,15 @@
       position: absolute;
       left: 0;
       top: 30%;
+      @media screen and (max-width: 1024px) {
+        width: 150px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 125px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100px;
+      }
     }
     :after {
       content: "";
@@ -42,6 +63,15 @@
       position: absolute;
       right: 0;
       top: 30%;
+      @media screen and (max-width: 1024px) {
+        width: 150px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 125px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100px;
+      }
     }
   }
 
@@ -61,13 +91,18 @@
   .button {
     font-size: 2rem;
     text-align: center;
-    background-color: @mint-green;
+    background-color: @white;
     width: 70%;
     height: 40px;
     padding-top: 10px;
-    border: 1px solid white;
+    border: 1px solid @mint-green;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: @mint-green;
+    color: @white;
   }
 }
 
@@ -76,6 +111,9 @@
   flex-direction: column;
   color: @white;
   margin-top: 100px;
+  @media screen and (max-width: 1024px) {
+    text-align: center;
+  }
 
   h2 {
     text-align: center;
@@ -88,7 +126,10 @@
     justify-content: space-between;
     width: 70%;
     margin-left: 5%;
-
+    @media screen and (max-width: 1024px) {
+      flex-direction: column;
+      margin: 0 auto;
+    }
 
     img {
       width: 300px;
@@ -109,5 +150,13 @@
     a:hover {
       color: @mint-green;
     }
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-left: -0px;
+  @media screen and (max-width: 500px) {
+    margin: 30px auto 0px auto;
   }
 }
