@@ -137,7 +137,6 @@ body {
   font-family: 'Poppins', sans-serif;
   background-size: cover;
   background: linear-gradient(to bottom, rgba(28, 26, 31, 0.99) 0%, rgba(0, 0, 0, 0.99) 2000px), url(../assets/images/background.jpg);
-  overflow-x: hidden;
 }
 h1,
 h2,
@@ -503,29 +502,6 @@ footer div {
   color: #929EAD;
   margin-top: 1rem;
   margin-right: 1rem;
-}
-.features .features-wrapper .feature .feature-img {
-  margin-top: 2%;
-}
-.features .features-wrapper .feature .feature-img #hotspots-img,
-.features .features-wrapper .feature .feature-img #predict-img {
-  width: 45rem;
-  height: 27.3rem;
-  border-radius: 0.3rem;
-  padding: 2%;
-}
-@media screen and (max-width:500px) {
-  .features .features-wrapper .feature .feature-img #hotspots-img,
-  .features .features-wrapper .feature .feature-img #predict-img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-@media screen and (max-width:500px) {
-  .jumbo-img-wrap.jumbo-img {
-    order: 1;
-    margin-left: 0%;
-  }
 }
 @media screen and (max-width: 800px) {
   #main {
