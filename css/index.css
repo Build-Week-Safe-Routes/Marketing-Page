@@ -633,6 +633,7 @@ footer {
 .blog-container img {
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 10px;
 }
 .blog-container .crossroads {
   width: 70%;
@@ -682,6 +683,7 @@ footer {
 .more-posts .more-posts-wrap img {
   width: 300px;
   padding: 10px;
+  border-radius: 30px;
 }
 .more-posts .more-posts-wrap p {
   width: 90%;
