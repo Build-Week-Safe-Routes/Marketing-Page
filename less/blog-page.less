@@ -2,26 +2,162 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
-  margin: 100px 0 0 10%;
+  width: 90%;
+  margin: 100px 0 0 5%;
+  @media screen and (max-width: 768px) {
+    width: 80%;
+    margin-top: 50px;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0px;
+  }
 
   a {
     color: @white;
     font-size: 3rem;
     text-decoration: none;
+    margin-bottom: 20px;
+    @media screen and (max-width: 768px) {
+      font-size: 2.5rem;
+    }
+    @media screen and (max-width: 500px) {
+      font-size: 2rem;
+    }
+  }
+
+  a:hover {
+    color: @mint-green;
+  }
+
+  p {
+    text-align: center;
+    color: @white;
+    margin-top: 10px auto;
+    width: 70%;
+    position: relative;
+
+    :before {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 2px;
+      background: @white;
+      position: absolute;
+      left: 0;
+      top: 30%;
+      @media screen and (max-width: 1024px) {
+        width: 170px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 125px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100px;
+      }
+    }
+    :after {
+      content: "";
+      display: block;
+      width: 200px;
+      height: 2px;
+      background: @white;
+      position: absolute;
+      right: 0;
+      top: 30%;
+      @media screen and (max-width: 1024px) {
+        width: 170px;
+      }
+      @media screen and (max-width: 768px) {
+        width: 125px;
+      }
+      @media screen and (max-width: 500px) {
+        width: 100px;
+      }
+    }
+  }
+
+  img {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
   }
 
   .crossroads {
     width: 70%;
   }
 
-  p {
-    color: @white;
-    margin-top: 10px;
+  .busy-road {
     width: 70%;
   }
 
-  .busy-road {
+  .button {
+    font-size: 2rem;
+    text-align: center;
+    background-color: @white;
     width: 70%;
+    height: 40px;
+    padding-top: 10px;
+    border: 1px solid @mint-green;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    background-color: @mint-green;
+    color: @white;
+  }
+}
+
+.more-posts {
+  display: flex;
+  flex-direction: column;
+  color: @white;
+  margin-top: 100px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .more-posts-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    margin-left: 5%;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+      text-align: center;
+      margin-left: 7.5rem;
+    }
+
+    img {
+      width: 300px;
+      padding: 10px;
+      border-radius: 30px;
+    }
+
+    p {
+      width: 90%;
+      margin-left: 3%;
+    }
+
+    a {
+      color: @white;
+      font-size: 1.5rem;
+      text-decoration: none;
+      margin-left: 2%;
+    }
+    a:hover {
+      color: @mint-green;
+    }
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  margin-left: -0px;
+  @media screen and (max-width: 500px) {
+    margin: 30px auto 0px auto;
   }
 }
