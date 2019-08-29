@@ -398,6 +398,7 @@ footer div {
   border-radius: 9px;
   font-weight: 500;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 .jumbotron .jumbo-cta .jumbo-button button a {
   text-decoration: none;
@@ -407,6 +408,12 @@ footer div {
   .jumbotron .jumbo-cta .jumbo-button button {
     margin-top: 12rem;
   }
+}
+.jumbotron .jumbo-cta .jumbo-button button:hover {
+  text-shadow: 0px 0px 8px #ffffff;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 .features {
   display: flex;
