@@ -503,29 +503,6 @@ footer div {
   margin-top: 1rem;
   margin-right: 1rem;
 }
-.features .features-wrapper .feature .feature-img {
-  margin-top: 2%;
-}
-.features .features-wrapper .feature .feature-img #hotspots-img,
-.features .features-wrapper .feature .feature-img #predict-img {
-  width: 45rem;
-  height: 27.3rem;
-  border-radius: 0.3rem;
-  padding: 2%;
-}
-@media screen and (max-width:500px) {
-  .features .features-wrapper .feature .feature-img #hotspots-img,
-  .features .features-wrapper .feature .feature-img #predict-img {
-    width: 100%;
-    max-width: 100%;
-  }
-}
-@media screen and (max-width:500px) {
-  .jumbo-img-wrap.jumbo-img {
-    order: 1;
-    margin-left: 0%;
-  }
-}
 @media screen and (max-width: 800px) {
   #main {
     width: 90%;
