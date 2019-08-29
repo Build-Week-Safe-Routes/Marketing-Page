@@ -53,6 +53,7 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  width: 100%;
   cursor: pointer;
   @media screen and (max-width: 500px) {
     width: 100%;
@@ -61,8 +62,10 @@ input[type=submit] {
 
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  color: @white;
-  background-color: @mint-green;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+    -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+    transition: all 0.4s ease 0s;
 }
 
 /* Add a background color and some padding around the form */

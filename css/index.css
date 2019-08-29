@@ -291,7 +291,6 @@ footer div {
 @media screen and (max-width:500px) {
   .jumbotron .jumbo-wrap .jumbo-text-wrap {
     order: 2;
-    margin-top: -23rem;
     text-align: center;
     width: 100%;
   }
@@ -306,6 +305,11 @@ footer div {
   line-height: 5.2rem;
   text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
   color: rgba(255, 255, 255, 0.8);
+}
+@media screen and (max-width:500px) {
+  .jumbotron .jumbo-wrap .jumbo-text-wrap .jumbo-text {
+    margin-top: 0px;
+  }
 }
 .jumbotron .jumbo-wrap .jumbo-text-wrap .jumbo-text span {
   color: #3DE39C;
@@ -389,11 +393,12 @@ footer div {
   width: 25rem;
   height: 5rem;
   box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.9);
-  margin-top: 15rem;
+  margin-top: 7rem;
   background: #3DE39C;
   border-radius: 9px;
   font-weight: 500;
   font-size: 1.6rem;
+  cursor: pointer;
 }
 .jumbotron .jumbo-cta .jumbo-button button a {
   text-decoration: none;
@@ -401,8 +406,14 @@ footer div {
 }
 @media screen and (max-width:500px) {
   .jumbotron .jumbo-cta .jumbo-button button {
-    margin-top: 15rem;
+    margin-top: 12rem;
   }
+}
+.jumbotron .jumbo-cta .jumbo-button button:hover {
+  text-shadow: 0px 0px 8px #ffffff;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 .features {
   display: flex;
@@ -784,6 +795,7 @@ input[type=submit] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  width: 100%;
   cursor: pointer;
 }
 @media screen and (max-width: 500px) {
@@ -793,8 +805,10 @@ input[type=submit] {
 }
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
-  color: #F2F2F2;
-  background-color: #3DE39C;
+  text-shadow: 0px 0px 8px #ffffff;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 /* Add a background color and some padding around the form */
 .form-container {

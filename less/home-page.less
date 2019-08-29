@@ -22,7 +22,6 @@
       .jumbo-text-wrap {  
           @media @phone {
               order: 2;
-              margin-top: -23rem;
               text-align: center;
               width: 100%;
           }
@@ -36,6 +35,10 @@
               line-height: 5.2rem;
               text-shadow: 0rem 0.5rem 0.4rem rgba(0, 0, 0, 0.56);
               color: rgba(255, 255, 255, 0.8);
+
+              @media @phone {
+                  margin-top: 0px;
+              }
       
 
               span {
@@ -133,11 +136,12 @@
             width: 25rem;
             height: 5.0rem;
             box-shadow: 0px 7px 4px rgba(0, 0, 0, 0.90);
-            margin-top: 15rem;
+            margin-top: 7rem;
             background:@mint-green;
             border-radius: 9px;
             font-weight: 500;
             font-size: 1.6rem;
+            cursor: pointer;
 
             a {
                 text-decoration: none;
@@ -146,9 +150,19 @@
             
   
             @media @phone {
-               margin-top: 15rem;
+               margin-top: 12rem;
             }
+
+            
+            
         }
+
+        button:hover {
+            text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.4s ease 0s;
+            }
 
       }
   }
