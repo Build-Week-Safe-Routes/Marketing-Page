@@ -236,26 +236,6 @@ ul a {
 ul a:hover {
   color: #3DE39C;
 }
-ul a.sign-in {
-  background: #3DE39C;
-  border: 2px solid #3DE39C;
-  border-radius: 6px;
-  font-family: 'Raleway';
-  color: white;
-  line-height: 1;
-  padding: 1rem 2rem;
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  margin-top: -0.8rem;
-}
-button.sign-in {
-  width: 8rem;
-  background-color: #3DE39C;
-}
-ul.internal-links a:hover {
-  opacity: 1;
-}
 ul.internal-links a:hover::before {
   transition: 300ms;
   height: 5px;
