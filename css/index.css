@@ -550,6 +550,11 @@ footer div {
     font-size: 2rem;
   }
 }
+@media screen and (max-width: 300px) {
+  .blog-container a {
+    font-size: 1.8rem;
+  }
+}
 .blog-container a:hover {
   color: #3DE39C;
 }
@@ -559,6 +564,11 @@ footer div {
   margin-top: 10px auto;
   width: 70%;
   position: relative;
+}
+@media screen and (max-width: 500px) {
+  .blog-container p {
+    width: 85%;
+  }
 }
 .blog-container p :before {
   content: "";
@@ -577,22 +587,22 @@ footer div {
 }
 @media screen and (max-width: 768px) {
   .blog-container p :before {
-    width: 100px;
+    width: 110px;
   }
 }
 @media screen and (max-width: 500px) {
   .blog-container p :before {
-    width: 80px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 400px) {
   .blog-container p :before {
-    width: 45px;
+    width: 65px;
   }
 }
 @media screen and (max-width: 300px) {
   .blog-container p :before {
-    width: 30px;
+    width: 45px;
   }
 }
 .blog-container p :after {
@@ -612,22 +622,22 @@ footer div {
 }
 @media screen and (max-width: 768px) {
   .blog-container p :after {
-    width: 100px;
+    width: 110px;
   }
 }
 @media screen and (max-width: 500px) {
   .blog-container p :after {
-    width: 80px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 400px) {
   .blog-container p :after {
-    width: 45px;
+    width: 65px;
   }
 }
 @media screen and (max-width: 300px) {
   .blog-container p :after {
-    width: 30px;
+    width: 45px;
   }
 }
 .blog-container img {
@@ -699,7 +709,7 @@ footer div {
   width: 70%;
   margin-left: 5%;
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 780px) {
   .more-posts .more-posts-wrap {
     flex-direction: column;
     width: 100%;
