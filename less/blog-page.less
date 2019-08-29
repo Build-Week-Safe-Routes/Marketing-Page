@@ -49,10 +49,16 @@
         width: 170px;
       }
       @media screen and (max-width: 768px) {
-        width: 125px;
+        width: 100px;
       }
       @media screen and (max-width: 500px) {
-        width: 100px;
+        width: 80px;
+      }
+      @media screen and (max-width: 400px) {
+        width: 45px;
+      }
+      @media screen and (max-width: 300px) {
+        width: 30px;
       }
     }
     :after {
@@ -68,10 +74,16 @@
         width: 170px;
       }
       @media screen and (max-width: 768px) {
-        width: 125px;
+        width: 100px;
       }
       @media screen and (max-width: 500px) {
-        width: 100px;
+        width: 80px;
+      }
+      @media screen and (max-width: 400px) {
+        width: 45px;
+      }
+      @media screen and (max-width: 300px) {
+        width: 30px;
       }
     }
   }
@@ -127,8 +139,12 @@
     margin-left: 5%;
     @media screen and (max-width: 500px) {
       flex-direction: column;
+      width: 100%;
+      margin-left: -0px;
       text-align: center;
-      margin-left: 7.5rem;
+    }
+    @media screen and (max-width: 400px) {
+
     }
 
     img {
@@ -139,7 +155,13 @@
 
     p {
       width: 90%;
-      margin-left: 3%;
+      // margin-left: 3%;
+      margin: 0 auto;
+      @media screen and (max-width: 400px) {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+      }
     }
 
     a {

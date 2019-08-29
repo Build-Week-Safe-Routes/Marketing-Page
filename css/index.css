@@ -609,12 +609,22 @@ footer div {
 }
 @media screen and (max-width: 768px) {
   .blog-container p :before {
-    width: 125px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 500px) {
   .blog-container p :before {
-    width: 100px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .blog-container p :before {
+    width: 45px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .blog-container p :before {
+    width: 30px;
   }
 }
 .blog-container p :after {
@@ -634,12 +644,22 @@ footer div {
 }
 @media screen and (max-width: 768px) {
   .blog-container p :after {
-    width: 125px;
+    width: 100px;
   }
 }
 @media screen and (max-width: 500px) {
   .blog-container p :after {
-    width: 100px;
+    width: 80px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .blog-container p :after {
+    width: 45px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .blog-container p :after {
+    width: 30px;
   }
 }
 .blog-container img {
@@ -688,8 +708,9 @@ footer div {
 @media screen and (max-width: 500px) {
   .more-posts .more-posts-wrap {
     flex-direction: column;
+    width: 100%;
+    margin-left: 0px;
     text-align: center;
-    margin-left: 7.5rem;
   }
 }
 .more-posts .more-posts-wrap img {
@@ -699,7 +720,14 @@ footer div {
 }
 .more-posts .more-posts-wrap p {
   width: 90%;
-  margin-left: 3%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 400px) {
+  .more-posts .more-posts-wrap p {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+  }
 }
 .more-posts .more-posts-wrap a {
   color: #F2F2F2;
