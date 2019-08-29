@@ -662,8 +662,25 @@ footer div {
 .blog-container .crossroads {
   width: 70%;
 }
+@media screen and (max-width: 500px) {
+  .blog-container .crossroads {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog-container .paragraph {
+    width: 90%;
+    text-align: left;
+    margin-left: 2%;
+  }
+}
 .blog-container .busy-road {
   width: 70%;
+}
+@media screen and (max-width: 500px) {
+  .blog-container .busy-road {
+    width: 90%;
+  }
 }
 .blog-container .button {
   font-size: 2rem;
@@ -676,9 +693,18 @@ footer div {
   border-radius: 5px;
   cursor: pointer;
 }
+@media screen and (max-width: 500px) {
+  .blog-container .button {
+    width: 90%;
+  }
+}
 .blog-container .button:hover {
   background-color: #3DE39C;
   color: #F2F2F2;
+  text-shadow: 0px 0px 8px #ffffff;
+  -webkit-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
+  transition: all 0.4s ease 0s;
 }
 .more-posts {
   display: flex;
